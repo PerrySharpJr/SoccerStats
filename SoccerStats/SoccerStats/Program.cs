@@ -67,6 +67,13 @@ namespace SoccerStats
                         gameResult.ShotsOffGoal = parseInt;
                     }
                     soccerResults.Add(gameResult);
+
+                    double possessionPercent;
+                    if (double.TryParse(values[7], out possessionPercent))
+                    {
+                        gameResult.PossessionPercent = possessionPercent;
+                    }
+                    soccerResults.Add(gameResult);
                 }
             }
             return soccerResults;
