@@ -8,6 +8,6 @@ namespace SoccerStats
 {
     public class GameResult
     {
-        public DateTime GameDate { get; set; }
+        public DateTime GameDate { get; set; 5}
     }
 }
